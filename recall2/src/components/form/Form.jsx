@@ -1,9 +1,11 @@
 
 import { Link } from 'react-router-dom'
+import NavBar from '../common/NavBar'
 
 const Form = ({type}) => {
   return (
     <>
+    <NavBar/>
       
        <div className=' py-4'></div>
         <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto lg:py-0">
@@ -18,7 +20,7 @@ const Form = ({type}) => {
                 <label className="block mb-2 text-sm font-medium text-gray-900">
                     Your username
                 </label>
-                <input placeholder="JohnDoe" className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg block w-full p-2.5" id="username" type="text" />
+                <input placeholder="Enter Your Name" className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg block w-full p-2.5" id="username" type="text" />
                 </div>
                 <div>
                 <label className="block mb-2 text-sm font-medium text-gray-900">

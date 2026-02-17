@@ -17,15 +17,15 @@ const Routes = () => {
             <>
             
             <Route path="/" element={<AuthLayout/>} >
-                <Route index element={< HomePage/>}/>
+                <Route index element={< HomePage />}/>
                 <Route path="about" element={<AboutPage/>}/>
                 <Route path="gallery" element={<Gallary/>}/>
                 <Route path="testimonial" element={<TestimonialPage/>}/>
                 <Route path="contact" element={<Contact/>} />
                 <Route path="product" element={
-                    <CheckAuthentication>
+                   
                          <Product/>
-                    </CheckAuthentication>
+                    
                        
                    
                    

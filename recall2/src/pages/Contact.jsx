@@ -3,119 +3,141 @@ import Button from '../components/common/Button'
 
 const ContactPage = () => {
   return (
-    <>
-     <div className='px-20'>
-  {/* Contact Section */}
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <section className="contact-section">
-    <div className="container mx-auto px-4 py-8">
-      <div className="grid md:grid-cols-2 gap-8 bg-white rounded-lg shadow-lg overflow-hidden">
-        {/* Contact Info */}
-        <div className="p-8 bg-white text-black">
-          <h2 className="text-2xl text-black mb-8 relative pb-4">
-            Contact Information
-            <span className="absolute bottom-0 left-0 w-12 h-0.5 bg-black" />
-          </h2>
-          {/* Location */}
-          <div className="flex items-start gap-4 mb-8">
-            <div className="w-12 h-12 bg-blue-500 flex items-center justify-center rounded-full text-xl">
-              <i className="fas fa-map-marker-alt" />
+    <div className="bg-white overflow-x-hidden">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+      <section className="px-6 md:px-12 lg:px-20 py-12 md:py-16">
+
+        <div className="grid md:grid-cols-2 gap-0 bg-white rounded-xl shadow-lg overflow-hidden">
+
+          {/* ─── LEFT: Contact Info ─── */}
+          <div className="p-6 sm:p-8 bg-gray-50">
+            <h2 className="text-2xl font-bold text-black mb-8 relative pb-4">
+              Contact Information
+              <span className="absolute bottom-0 left-0 w-12 h-0.5 bg-black" />
+            </h2>
+
+            {/* Location */}
+            <div className="flex items-start gap-4 mb-7">
+              <div className="w-11 h-11 shrink-0 bg-blue-500 flex items-center justify-center rounded-full text-white text-lg">
+                <i className="fas fa-map-marker-alt" />
+              </div>
+              <div>
+                <h3 className="text-base font-semibold mb-1">Our Location</h3>
+                <p className="text-gray-600 text-sm leading-relaxed">Itahari, Sunsari, Nepal</p>
+              </div>
             </div>
-            <div>
-              <h3 className="text-lg mb-1">Our Location</h3>
-              <p className="text-black leading-relaxed">
-                Itahari
-              </p>
-            </div>
-          </div>
-          {/* Phone Numbers */}
-          <div className="flex items-start gap-4 mb-8">
-            <div className="w-12 h-12 bg-blue-500 flex items-center justify-center rounded-full text-xl">
-              <i className="fas fa-phone-alt" />
-            </div>
-            <div>
-              <h3 className="text-lg mb-1">Phone Numbers</h3>
-              <p className="text-black leading-relaxed">
-                <a href="tel:+978589658" className="hover:text-blue-400">+977 9812377759</a><br />
-                <a href="tel:+748596255" className="hover:text-blue-400">+977 9812307779</a>
-              </p>
-            </div>
-          </div>
-          {/* Email */}
-          <div className="flex items-start gap-4 mb-8">
-            <div className="w-12 h-12 bg-blue-500 flex items-center justify-center rounded-full text-xl">
-              <i className="fas fa-envelope" />
-            </div>
-            <div>
-              <h3 className="text-lg mb-1">Email Address</h3>
-              <p className="text-black leading-relaxed">
-                <a href="mailto:kuldeepprajapati2111@gmail.com" className="hover:text-blue-400">azk522@gmail.com</a><br />
-              </p>
-            </div>
-          </div>
-          {/* Social Links */}
-          <div className="flex gap-4 mt-8">
-            <a href="#" className="w-10 h-10 bg-gray-700 flex items-center justify-center rounded-full text-white transition duration-300 hover:bg-blue-500 transform hover:-translate-y-1">
-              <i className="fab fa-facebook-f" />
-            </a>
-            <a href="#" className="w-10 h-10 bg-gray-700 flex items-center justify-center rounded-full text-white transition duration-300 hover:bg-red-800 transform hover:-translate-y-1">
-              <i className="fab fa-instagram" />
-            </a>
-            <a href="#" className="w-10 h-10 bg-gray-700 flex items-center justify-center rounded-full text-white transition duration-300 hover:bg-blue-400 transform hover:-translate-y-1">
-              <i className="fab fa-twitter" />
-            </a>
-            <a href="#" className="w-10 h-10 bg-gray-700 flex items-center justify-center rounded-full text-white transition duration-300 hover:bg-blue-700 transform hover:-translate-y-1">
-              <i className="fab fa-linkedin-in" />
-            </a>
-          </div>
-        </div>
-        {/* Contact Form */}
-        <div className="p-8">
-          <h2 className="text-2xl text-black mb-8 relative pb-4">
-            Send Us a Message
-            <span className="absolute bottom-0 left-0 w-12 h-0.5 bg-blue-500" />
-          </h2>
-          <form className="space-y-6">
-            {/* Name */}
-            <div>
-              <label htmlFor="name" className="block mb-2 font-medium">Your Name</label>
-              <input type="text" id="name" className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-300 transition" required />
-            </div>
-            {/* Email */}
-            <div>
-              <label htmlFor="email" className="block mb-2 font-medium">Email Address</label>
-              <input type="email" id="email" className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-300 transition" required />
-            </div>
+
             {/* Phone */}
-            <div>
-              <label htmlFor="phone" className="block mb-2 font-medium">Phone Number</label>
-              <input type="tel" id="phone" className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-300 transition" />
+            <div className="flex items-start gap-4 mb-7">
+              <div className="w-11 h-11 shrink-0 bg-blue-500 flex items-center justify-center rounded-full text-white text-lg">
+                <i className="fas fa-phone-alt" />
+              </div>
+              <div>
+                <h3 className="text-base font-semibold mb-1">Phone Numbers</h3>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  <a href="tel:+9779812377759" className="hover:text-blue-500 transition-colors">+977 9812377759</a><br />
+                  <a href="tel:+9779812307779" className="hover:text-blue-500 transition-colors">+977 9812307779</a>
+                </p>
+              </div>
             </div>
-            {/* Subject */}
-            <div>
-              <label htmlFor="subject" className="block mb-2 font-medium">Subject</label>
-              <input type="text" id="subject" className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-300 transition" />
+
+            {/* Email */}
+            <div className="flex items-start gap-4 mb-7">
+              <div className="w-11 h-11 shrink-0 bg-blue-500 flex items-center justify-center rounded-full text-white text-lg">
+                <i className="fas fa-envelope" />
+              </div>
+              <div>
+                <h3 className="text-base font-semibold mb-1">Email Address</h3>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  <a href="mailto:azk522@gmail.com" className="hover:text-blue-500 transition-colors break-all">azk522@gmail.com</a>
+                </p>
+              </div>
             </div>
-            {/* Message */}
-            <div>
-              <label htmlFor="message" className="block mb-2 font-medium">Your Message</label>
-              <textarea id="message" className="w-full p-3 border border-gray-300 rounded-md min-h-[150px] resize-y focus:outline-none focus:ring-2 focus:ring-blue-300 transition" required defaultValue={""} />
+
+            {/* Social Icons */}
+            <div className="flex gap-3 mt-8">
+              <a href="#" className="w-10 h-10 bg-gray-700 flex items-center justify-center rounded-full text-white hover:bg-blue-600 hover:-translate-y-1 transition duration-300">
+                <i className="fab fa-facebook-f" />
+              </a>
+              <a href="#" className="w-10 h-10 bg-gray-700 flex items-center justify-center rounded-full text-white hover:bg-pink-600 hover:-translate-y-1 transition duration-300">
+                <i className="fab fa-instagram" />
+              </a>
+              <a href="#" className="w-10 h-10 bg-gray-700 flex items-center justify-center rounded-full text-white hover:bg-blue-400 hover:-translate-y-1 transition duration-300">
+                <i className="fab fa-twitter" />
+              </a>
+              <a href="#" className="w-10 h-10 bg-gray-700 flex items-center justify-center rounded-full text-white hover:bg-blue-700 hover:-translate-y-1 transition duration-300">
+                <i className="fab fa-linkedin-in" />
+              </a>
             </div>
-            {/* Submit Button */}
-            <Button  text="Send text" color="text-white bg-black hover:text-black hover:scale-105 hover:shadow-lg transition duration-300"/> 
-            
-          </form>
+          </div>
+
+          {/* ─── RIGHT: Contact Form ─── */}
+          <div className="p-6 sm:p-8">
+            <h2 className="text-2xl font-bold text-black mb-8 relative pb-4">
+              Send Us a Message
+              <span className="absolute bottom-0 left-0 w-12 h-0.5 bg-blue-500" />
+            </h2>
+
+            <form className="space-y-5">
+              <div>
+                <label htmlFor="name" className="block mb-1.5 text-sm font-medium text-gray-700">Your Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  className="w-full p-3 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-blue-300 transition"
+                  required
+                />
+              </div>
+
+              <div>
+                <label htmlFor="email" className="block mb-1.5 text-sm font-medium text-gray-700">Email Address</label>
+                <input
+                  type="email"
+                  id="email"
+                  className="w-full p-3 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-blue-300 transition"
+                  required
+                />
+              </div>
+
+              <div>
+                <label htmlFor="phone" className="block mb-1.5 text-sm font-medium text-gray-700">Phone Number</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  className="w-full p-3 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-blue-300 transition"
+                />
+              </div>
+
+              <div>
+                <label htmlFor="subject" className="block mb-1.5 text-sm font-medium text-gray-700">Subject</label>
+                <input
+                  type="text"
+                  id="subject"
+                  className="w-full p-3 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-blue-300 transition"
+                />
+              </div>
+
+              <div>
+                <label htmlFor="message" className="block mb-1.5 text-sm font-medium text-gray-700">Your Message</label>
+                <textarea
+                  id="message"
+                  className="w-full p-3 border border-gray-300 rounded-md text-sm min-h-[140px] resize-y focus:outline-none focus:ring-2 focus:ring-blue-300 transition"
+                  required
+                  defaultValue=""
+                />
+              </div>
+
+              <Button
+                text="Send Message"
+                color="text-white bg-black hover:text-white hover:bg-blue-600 hover:scale-105 hover:shadow-lg transition duration-300"
+              />
+            </form>
+          </div>
+
         </div>
-      </div>
+      </section>
     </div>
-  </section>
-</div>
-
-
-
-
-
-    </>
   )
 }
 

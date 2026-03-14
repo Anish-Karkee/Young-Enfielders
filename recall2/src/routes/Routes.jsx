@@ -11,6 +11,7 @@ import LogInPage from "../pages/LogInPage";
 import CheckAuthentication from "../components/checkAuthentication";
 import AuthLayout from "../layouts/AuthLayout";
 import UnAuthLayout from "../layouts/UnAuthLayout";
+import Hero from ".././components/home/Hero";
 const Routes = () => {
     const router = createBrowserRouter(
         createRoutesFromElements(

@@ -30,7 +30,7 @@ const Footer = () => {
             <div className="flex gap-1">
               <p className="text-gray-600">Phone:</p>
               <a href="tel:9802346502" className="text-gray-800 hover:text-orange-500 transition-colors duration-200">
-                9802346502
+                9810046088
               </a>
             </div>
             <div className="flex gap-1">

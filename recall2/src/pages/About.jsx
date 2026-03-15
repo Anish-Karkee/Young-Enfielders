@@ -75,14 +75,7 @@ const AboutPage = () => {
               road. We organize regular rides, tours, and meet-ups to explore the diverse terrain of eastern
               Nepal, promoting responsible biking culture and turning fellow riders into lifelong friends.
             </p>
-            <div className="mt-6">
-              <Link to="/product">
-                <Button
-                  text="Products"
-                  color="text-blue-300 bg-black hover:text-white hover:scale-105 hover:shadow-lg transition duration-300"
-                />
-              </Link>
-            </div>
+            
           </div>
 
         </div>
